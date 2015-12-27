@@ -1,0 +1,24 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        ""
+    ],
+    "companyName": "FMonline",
+    "longName": "FMWatchFace",
+    "projectType": "native",
+    "resources": {
+        "media": []
+    },
+    "sdkVersion": "3",
+    "shortName": "FMWF",
+    "targetPlatforms": [
+        "aplite",
+        "basalt",
+        "chalk"
+    ],
+    "uuid": "07b445b8-b954-43ba-8f6f-4dde46e6eb81",
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": true
+    }
+}
