@@ -19,7 +19,7 @@ static void update_time() {
   static char s_buffer_date[14];
   strftime(s_buffer, sizeof(s_buffer), clock_is_24h_style() ?
                                           "%k:%M" : "%l:%M", tick_time);
-  strftime(s_buffer_date, sizeof(s_buffer_date), "%a\n%D", tick_time);
+  strftime(s_buffer_date, sizeof(s_buffer_date), "%a\n%e %b %y", tick_time);
 
   // Display this time on the TextLayer
   text_layer_set_text(s_time_layer, s_buffer);
@@ -38,10 +38,10 @@ static void tick_handler(struct tm *tick_time, TimeUnits units_changed) {
 static void bt_update_label(bool connected) {
   if (connected) {
     text_layer_set_text_color(s_bt_layer, GColorBlack);
-    text_layer_set_text(s_bt_layer, "connected");
+    text_layer_set_text(s_bt_layer, PBL_IF_ROUND_ELSE("connected", "bt"));
   } else {
     text_layer_set_text_color(s_bt_layer, GColorRed);
-    text_layer_set_text(s_bt_layer, "not connected");
+    text_layer_set_text(s_bt_layer, PBL_IF_ROUND_ELSE("not connected", "bt"));
     vibes_long_pulse();
   }
 }
