@@ -9,7 +9,15 @@
     "resources": {
         "media": [
             {
-                "file": "fonts/InsomniaRegular.ttf",
+                "characterRegex": "[a-zA-Z ]",
+                "file": "fonts/InsomniaBTSmall.ttf",
+                "name": "INSOMNIA_REGULAR_16",
+                "targetPlatforms": null,
+                "type": "font"
+            },
+            {
+                "characterRegex": "[0-9:.]",
+                "file": "fonts/InsomniaTime.ttf",
                 "name": "INSOMNIA_REGULAR_48",
                 "targetPlatforms": null,
                 "type": "font"
