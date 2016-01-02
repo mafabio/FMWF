@@ -9,14 +9,14 @@
     "resources": {
         "media": [
             {
-                "characterRegex": "[a-zA-Z ]",
+                "characterRegex": "[a-zA-Z0-9 -/]",
                 "file": "fonts/InsomniaBTSmall.ttf",
                 "name": "INSOMNIA_REGULAR_16",
                 "targetPlatforms": null,
                 "type": "font"
             },
             {
-                "characterRegex": "[0-9:.]",
+                "characterRegex": "[0-9:. amp]",
                 "file": "fonts/InsomniaTime.ttf",
                 "name": "INSOMNIA_REGULAR_48",
                 "targetPlatforms": null,
